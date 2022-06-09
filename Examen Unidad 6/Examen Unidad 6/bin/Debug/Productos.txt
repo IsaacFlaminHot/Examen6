@@ -1,0 +1,30 @@
+El nombre del producto es: Mouse
+Descripcion del producto: Mouse con Luces Rgb y wireless
+El precio del producto es: 654.2$
+La cantidad en stock del producto es: 25
+El nombre del producto es: Teclado
+Descripcion del producto: Teclado cons Switches Brown 
+El precio del producto es: 1500.99$
+La cantidad en stock del producto es: 12
+El nombre del producto es: Playstation 5
+Descripcion del producto: Consola de Vieojuegos
+El precio del producto es: 13000$
+La cantidad en stock del producto es: 13
+El nombre del producto es: Iphone 13
+Descripcion del producto: Celular Con 128 gb
+El precio del producto es: 20000.99$
+La cantidad en stock del producto es: 75
+El nombre del producto es: Cubo Rubik
+
+Descripcion del producto: Juguete para niños
+
+El precio del producto es: 200.5$
+
+La cantidad en stock del producto es: 24
+El nombre del producto es: Home Pod
+
+Descripcion del producto: Bocina marca Apple
+
+El precio del producto es: 2000.99$
+
+La cantidad en stock del producto es: 24

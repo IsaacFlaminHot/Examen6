@@ -35,12 +35,13 @@ namespace Examen_Unidad_6
         static void Main(string[] args)
         {
             StreamWriter sw = new StreamWriter("Productos.txt", true); //Creacion del Archivo
-            int opc = 0;
+            int opc;
             do
             {
                 Console.WriteLine("Bienvenido a Amazon.");
-                Console.WriteLine("1) Registrar Productos. \n2)Salir del Progrma");
+                Console.WriteLine("1) Registrar Productos. \n2) Salir del Programa");
                 Console.Write("Elija su opcion: ");
+                opc = int.Parse(Console.ReadLine());
                 switch (opc)
                 {
                     case 1:
@@ -66,14 +67,12 @@ namespace Examen_Unidad_6
 
                             p1.DesplegarDatos();
 
-                            sw.WriteLine("El nombre del producto es: {0}", p1.nombre);
-                            sw.WriteLine("Descripcion del producto: {0}", p1.descripcion);
-                            sw.WriteLine("El precio del producto es: {0}$", p1.precio);
-                            sw.WriteLine("La cantidad en stock del producto es: {0}", p1.stock);
+                            sw.WriteLine("\nEl nombre del producto es: {0}", p1.nombre);
+                            sw.WriteLine("\nDescripcion del producto: {0}", p1.descripcion);
+                            sw.WriteLine("\nEl precio del producto es: {0}$", p1.precio);
+                            sw.WriteLine("\nLa cantidad en stock del producto es: {0}", p1.stock);
 
-                            sw.Close();
-
-                            Console.WriteLine("Escribiendo en el archivo...\n\n Presione Enter para continuar.");
+                            Console.WriteLine("Escribiendo en el archivo...\n\nPresione Enter para continuar.");
                             Console.ReadKey();
                             Console.Clear();
                             break;
@@ -81,6 +80,7 @@ namespace Examen_Unidad_6
                     case 2:
                         {
                             Console.WriteLine("Gracias por usar el programa. \nPresiones <Enter> para salir. ");
+                            Console.ReadKey();
                             break;
                         }
                     default:
@@ -93,6 +93,7 @@ namespace Examen_Unidad_6
                 }
 
             } while (opc != 2);
+            sw.Close();
         }
     }
 }
